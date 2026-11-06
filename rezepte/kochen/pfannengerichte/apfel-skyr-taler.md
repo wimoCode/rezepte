@@ -1,7 +1,7 @@
 ---
 titel: Apfel-Skyr-Taler
 untertitel: Schnell aus der Pfanne
-kategorie: backen/kleingebaeck-kekse
+kategorie: kochen/pfannengerichte
 portionen: ca. 12 Taler
 zeit_aktiv: ca. 10 Min.
 zeit_gesamt: ca. 20 Min.

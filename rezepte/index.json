@@ -89,11 +89,11 @@
  ],
  "rezepte": [
   {
-   "id": "backen/kleingebaeck-kekse/apfel-skyr-taler",
-   "pfad": "rezepte/backen/kleingebaeck-kekse/apfel-skyr-taler.md",
+   "id": "kochen/pfannengerichte/apfel-skyr-taler",
+   "pfad": "rezepte/kochen/pfannengerichte/apfel-skyr-taler.md",
    "titel": "Apfel-Skyr-Taler",
    "untertitel": "Schnell aus der Pfanne",
-   "kategorie": "backen/kleingebaeck-kekse",
+   "kategorie": "kochen/pfannengerichte",
    "tags": [],
    "portionen": "ca. 12 Taler",
    "zeit_gesamt": "ca. 20 Min."
@@ -107,6 +107,16 @@
    "tags": [],
    "portionen": "ca. 50 Stück",
    "zeit_gesamt": "30 Min."
+  },
+  {
+   "id": "kochen/tofu-rezepte/doener-tofu",
+   "pfad": "rezepte/kochen/tofu-rezepte/doener-tofu.md",
+   "titel": "Döner-Tofu",
+   "untertitel": "",
+   "kategorie": "kochen/tofu-rezepte",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
   },
   {
    "id": "backen/semmeln-broetchen/einfache-semmeln",
@@ -178,6 +188,16 @@
    "kategorie": "kochen/saucen-dips",
    "tags": [],
    "portionen": "ca. 500 ml, 8 bis 12 Portionen",
+   "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/currys/kichererbsen-curry",
+   "pfad": "rezepte/kochen/currys/kichererbsen-curry.md",
+   "titel": "Kichererbsen-Curry",
+   "untertitel": "",
+   "kategorie": "kochen/currys",
+   "tags": [],
+   "portionen": "",
    "zeit_gesamt": ""
   },
   {
