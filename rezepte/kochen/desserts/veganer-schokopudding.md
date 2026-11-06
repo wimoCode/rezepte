@@ -5,8 +5,6 @@ kategorie: kochen/desserts
 portionen: 3 bis 4 Dessertgläser
 ---
 
-Noch zu ergänzen: weitere Zutaten oberhalb des Cashewmus und die ersten beiden Zubereitungsschritte.
-
 ## Zutaten
 
 - 75 g Cashewmus

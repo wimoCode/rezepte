@@ -171,6 +171,16 @@
    "zeit_gesamt": "55 Min."
   },
   {
+   "id": "backen/brot/naehrstoff-booster-brot",
+   "pfad": "rezepte/backen/brot/naehrstoff-booster-brot.md",
+   "titel": "Nährstoff-Booster-Brot",
+   "untertitel": "Weizen 1050, Quark, Saaten",
+   "kategorie": "backen/brot",
+   "tags": [],
+   "portionen": "1 großes Brot (ca. 1,2 kg)",
+   "zeit_gesamt": ""
+  },
+  {
    "id": "backen/brot/sauerteig-brot",
    "pfad": "rezepte/backen/brot/sauerteig-brot.md",
    "titel": "Sauerteig-Brot ohne Kerne",
@@ -199,6 +209,18 @@
    "tags": [],
    "portionen": "6 Pizzen",
    "zeit_gesamt": "ca. 1 bis 2 Tage"
+  },
+  {
+   "id": "backen/kleingebaeck-kekse/stillkekse",
+   "pfad": "rezepte/backen/kleingebaeck-kekse/stillkekse.md",
+   "titel": "Stillkekse",
+   "untertitel": "Mit Haferflocken, Nüssen und Saaten",
+   "kategorie": "backen/kleingebaeck-kekse",
+   "tags": [
+    "thermomix"
+   ],
+   "portionen": "",
+   "zeit_gesamt": ""
   },
   {
    "id": "kochen/saucen-dips/tahini-aioli",
@@ -271,6 +293,18 @@
    "tags": [],
    "portionen": "6 Personen",
    "zeit_gesamt": "1 Std. 10 Min."
+  },
+  {
+   "id": "kochen/suppen/weltbeste-kuerbissuppe",
+   "pfad": "rezepte/kochen/suppen/weltbeste-kuerbissuppe.md",
+   "titel": "Weltbeste Kürbissuppe",
+   "untertitel": "Mit Orangensaft, Ingwer und Chili",
+   "kategorie": "kochen/suppen",
+   "tags": [
+    "thermomix"
+   ],
+   "portionen": "3 Portionen",
+   "zeit_gesamt": ""
   }
  ]
 }
