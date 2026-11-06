@@ -1,0 +1,26 @@
+{
+  "backen": {
+    "label": "Backen",
+    "unter": {
+      "brot": "Brot",
+      "semmeln-broetchen": "Semmeln & Brötchen",
+      "kuchen-torten": "Kuchen & Torten",
+      "kleingebaeck-kekse": "Kleingebäck & Kekse",
+      "herzhaftes": "Herzhaftes",
+      "grundrezepte": "Grundrezepte"
+    }
+  },
+  "kochen": {
+    "label": "Kochen",
+    "unter": {
+      "currys": "Currys",
+      "eintoepfe": "Eintöpfe",
+      "suppen": "Suppen",
+      "nudeln": "Nudeln",
+      "auflaeufe": "Aufläufe",
+      "pfannengerichte": "Pfannengerichte",
+      "salate-beilagen": "Salate & Beilagen",
+      "saucen-dips": "Saucen & Dips"
+    }
+  }
+}
