@@ -2,7 +2,7 @@
 titel: Apfel-Skyr-Taler
 untertitel: Schnell aus der Pfanne
 kategorie: backen/kleingebaeck-kekse
-portionen: ca. 6 Taler
+portionen: ca. 12 Taler
 zeit_aktiv: ca. 10 Min.
 zeit_gesamt: ca. 20 Min.
 ---
@@ -11,13 +11,14 @@ Arbeitszeit ca. 10 Minuten, Koch-/Backzeit ca. 10 Minuten.
 
 ## Zutaten
 
-- 1 Ei
-- 150 g Skyr
-- 50 g Dinkelmehl
-- 1 Apfel
+- 2 Eier
+- 300 g Skyr
+- 100 g Dinkelmehl
+- 2 Äpfel
 - Zimt oder Vanille (optional)
 - Pflanzenöl (zum Ausbacken)
 
 ## Zubereitung
 
-Noch zu ergänzen: Die Zubereitungsschritte fehlen noch.
+1. Alle Zutaten im Mixer zu einem Teig mixen.
+2. Den Teig wie Pfannkuchen in etwas Öl in der Pfanne ausbacken.

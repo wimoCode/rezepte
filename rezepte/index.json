@@ -1,36 +1,6 @@
 {
  "kategorien": [
   {
-   "id": "backen",
-   "label": "Backen",
-   "unter": [
-    {
-     "id": "brot",
-     "label": "Brot"
-    },
-    {
-     "id": "semmeln-broetchen",
-     "label": "Semmeln & Brötchen"
-    },
-    {
-     "id": "kuchen-torten",
-     "label": "Kuchen & Torten"
-    },
-    {
-     "id": "kleingebaeck-kekse",
-     "label": "Kleingebäck & Kekse"
-    },
-    {
-     "id": "herzhaftes",
-     "label": "Herzhaftes"
-    },
-    {
-     "id": "grundrezepte",
-     "label": "Grundrezepte"
-    }
-   ]
-  },
-  {
    "id": "kochen",
    "label": "Kochen",
    "unter": [
@@ -59,8 +29,12 @@
      "label": "Pfannengerichte"
     },
     {
-     "id": "salate-beilagen",
-     "label": "Salate & Beilagen"
+     "id": "salate",
+     "label": "Salate"
+    },
+    {
+     "id": "beilagen",
+     "label": "Beilagen"
     },
     {
      "id": "saucen-dips",
@@ -69,6 +43,36 @@
     {
      "id": "desserts",
      "label": "Desserts"
+    }
+   ]
+  },
+  {
+   "id": "backen",
+   "label": "Backen",
+   "unter": [
+    {
+     "id": "brot",
+     "label": "Brot"
+    },
+    {
+     "id": "semmeln-broetchen",
+     "label": "Semmeln & Brötchen"
+    },
+    {
+     "id": "kuchen-torten",
+     "label": "Kuchen & Torten"
+    },
+    {
+     "id": "kleingebaeck-kekse",
+     "label": "Kleingebäck & Kekse"
+    },
+    {
+     "id": "herzhaftes",
+     "label": "Herzhaftes"
+    },
+    {
+     "id": "grundrezepte",
+     "label": "Grundrezepte"
     }
    ]
   }
@@ -81,7 +85,7 @@
    "untertitel": "Schnell aus der Pfanne",
    "kategorie": "backen/kleingebaeck-kekse",
    "tags": [],
-   "portionen": "ca. 6 Taler",
+   "portionen": "ca. 12 Taler",
    "zeit_gesamt": "ca. 20 Min."
   },
   {
@@ -125,6 +129,26 @@
    "tags": [],
    "portionen": "4 Stück",
    "zeit_gesamt": "ca. 25 Min."
+  },
+  {
+   "id": "kochen/saucen-dips/hummus",
+   "pfad": "rezepte/kochen/saucen-dips/hummus.md",
+   "titel": "Hummus",
+   "untertitel": "Aus dem Mixer",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [],
+   "portionen": "ca. 500 ml, 8 bis 12 Portionen",
+   "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/saucen-dips/mandel-sauce",
+   "pfad": "rezepte/kochen/saucen-dips/mandel-sauce.md",
+   "titel": "Mandel-Sauce",
+   "untertitel": "Mit Kokosmilch, Tomaten und Gewürzen",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
   },
   {
    "id": "backen/semmeln-broetchen/milchbroetchen-ohne-zucker-mit-apfelmark",
@@ -175,6 +199,26 @@
    "tags": [],
    "portionen": "6 Pizzen",
    "zeit_gesamt": "ca. 1 bis 2 Tage"
+  },
+  {
+   "id": "kochen/saucen-dips/tahini-aioli",
+   "pfad": "rezepte/kochen/saucen-dips/tahini-aioli.md",
+   "titel": "Tahini-Aioli",
+   "untertitel": "",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/beilagen/tofu-crumble",
+   "pfad": "rezepte/kochen/beilagen/tofu-crumble.md",
+   "titel": "Tofu-Crumble",
+   "untertitel": "Beilage",
+   "kategorie": "kochen/beilagen",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
   },
   {
    "id": "kochen/saucen-dips/tomatensosse",
