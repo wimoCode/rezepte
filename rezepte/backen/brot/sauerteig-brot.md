@@ -2,7 +2,6 @@
 titel: Sauerteig-Brot ohne Kerne
 untertitel: Großes Topfbrot, ca. 1,8 kg Teig
 kategorie: backen/brot
-tags: [sauerteig, vegan, topfbrot, no-knead]
 portionen: 1 großes Brot
 zeit_gesamt: ca. 14 Std.
 ---

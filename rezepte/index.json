@@ -65,24 +65,46 @@
     {
      "id": "saucen-dips",
      "label": "Saucen & Dips"
+    },
+    {
+     "id": "desserts",
+     "label": "Desserts"
     }
    ]
   }
  ],
  "rezepte": [
   {
+   "id": "backen/kleingebaeck-kekse/apfel-skyr-taler",
+   "pfad": "rezepte/backen/kleingebaeck-kekse/apfel-skyr-taler.md",
+   "titel": "Apfel-Skyr-Taler",
+   "untertitel": "Schnell aus der Pfanne",
+   "kategorie": "backen/kleingebaeck-kekse",
+   "tags": [],
+   "portionen": "ca. 6 Taler",
+   "zeit_gesamt": "ca. 20 Min."
+  },
+  {
    "id": "backen/semmeln-broetchen/einfache-semmeln",
    "pfad": "rezepte/backen/semmeln-broetchen/einfache-semmeln.md",
    "titel": "Einfache Semmeln",
    "untertitel": "Sauerteig-Semmeln ohne Kneten",
    "kategorie": "backen/semmeln-broetchen",
-   "tags": [
-    "sauerteig",
-    "vegan",
-    "no-knead"
-   ],
+   "tags": [],
    "portionen": "",
    "zeit_gesamt": "ca. 14 bis 18 Std."
+  },
+  {
+   "id": "kochen/desserts/erdbeereis-mit-joghurt",
+   "pfad": "rezepte/kochen/desserts/erdbeereis-mit-joghurt.md",
+   "titel": "Erdbeereis mit Joghurt",
+   "untertitel": "Einfach, in 5 Minuten fertig",
+   "kategorie": "kochen/desserts",
+   "tags": [
+    "thermomix"
+   ],
+   "portionen": "4 Portionen",
+   "zeit_gesamt": "5 Min."
   },
   {
    "id": "backen/brot/focaccia",
@@ -90,13 +112,29 @@
    "titel": "Failsafe Focaccia",
    "untertitel": "Andy Cooks Style",
    "kategorie": "backen/brot",
-   "tags": [
-    "hefe",
-    "vegan",
-    "no-knead"
-   ],
+   "tags": [],
    "portionen": "",
    "zeit_gesamt": "ca. 3 Std."
+  },
+  {
+   "id": "kochen/pfannengerichte/haferflocken-schnitzel",
+   "pfad": "rezepte/kochen/pfannengerichte/haferflocken-schnitzel.md",
+   "titel": "Haferflocken-Schnitzel",
+   "untertitel": "Aus der Pfanne, mit Semmelbröseln",
+   "kategorie": "kochen/pfannengerichte",
+   "tags": [],
+   "portionen": "4 Stück",
+   "zeit_gesamt": "ca. 25 Min."
+  },
+  {
+   "id": "backen/semmeln-broetchen/milchbroetchen-ohne-zucker-mit-apfelmark",
+   "pfad": "rezepte/backen/semmeln-broetchen/milchbroetchen-ohne-zucker-mit-apfelmark.md",
+   "titel": "Milchbrötchen ohne Zucker mit Apfelmark",
+   "untertitel": "Mit Dinkelmehl, süß nur durch das Apfelmark",
+   "kategorie": "backen/semmeln-broetchen",
+   "tags": [],
+   "portionen": "8 Brötchen",
+   "zeit_gesamt": "1 Std. 35 Min."
   },
   {
    "id": "backen/semmeln-broetchen/moehren-sesam-broetchen",
@@ -104,11 +142,7 @@
    "titel": "Möhren-Sesam-Brötchen",
    "untertitel": "Ohne Gehzeit, mit Backpulver",
    "kategorie": "backen/semmeln-broetchen",
-   "tags": [
-    "vegan",
-    "schnell",
-    "backpulver"
-   ],
+   "tags": [],
    "portionen": "10 Brötchen",
    "zeit_gesamt": "55 Min."
   },
@@ -118,12 +152,7 @@
    "titel": "Sauerteig-Brot ohne Kerne",
    "untertitel": "Großes Topfbrot, ca. 1,8 kg Teig",
    "kategorie": "backen/brot",
-   "tags": [
-    "sauerteig",
-    "vegan",
-    "topfbrot",
-    "no-knead"
-   ],
+   "tags": [],
    "portionen": "1 großes Brot",
    "zeit_gesamt": "ca. 14 Std."
   },
@@ -133,15 +162,71 @@
    "titel": "Sauerteig-Kernebrot",
    "untertitel": "Großes Topfbrot, ca. 2,1 kg Teig",
    "kategorie": "backen/brot",
-   "tags": [
-    "sauerteig",
-    "vegan",
-    "topfbrot",
-    "no-knead",
-    "kerne"
-   ],
+   "tags": [],
    "portionen": "1 großes Brot",
    "zeit_gesamt": "ca. 14 bis 18 Std."
+  },
+  {
+   "id": "backen/herzhaftes/sauerteig-pizza",
+   "pfad": "rezepte/backen/herzhaftes/sauerteig-pizza.md",
+   "titel": "Sauerteig-Pizza",
+   "untertitel": "Mit Vorteig, lange Teigführung im Kühlschrank",
+   "kategorie": "backen/herzhaftes",
+   "tags": [],
+   "portionen": "6 Pizzen",
+   "zeit_gesamt": "ca. 1 bis 2 Tage"
+  },
+  {
+   "id": "kochen/saucen-dips/tomatensosse",
+   "pfad": "rezepte/kochen/saucen-dips/tomatensosse.md",
+   "titel": "Tomatensoße",
+   "untertitel": "Aus dem Thermomix, püriert",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [
+    "thermomix"
+   ],
+   "portionen": "",
+   "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/desserts/veganer-schokopudding",
+   "pfad": "rezepte/kochen/desserts/veganer-schokopudding.md",
+   "titel": "Veganer Schokopudding",
+   "untertitel": "Mit Hafermilch und Cashewmus",
+   "kategorie": "kochen/desserts",
+   "tags": [],
+   "portionen": "3 bis 4 Dessertgläser",
+   "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/currys/veganes-butter-chicken-mit-tofu",
+   "pfad": "rezepte/kochen/currys/veganes-butter-chicken-mit-tofu.md",
+   "titel": "Veganes Butter Chicken mit Tofu",
+   "untertitel": "Indisch, mit Kokosmilch und knusprigem Tofu",
+   "kategorie": "kochen/currys",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/currys/veganes-linsen-curry",
+   "pfad": "rezepte/kochen/currys/veganes-linsen-curry.md",
+   "titel": "Veganes Linsen-Curry",
+   "untertitel": "Winter-Eintopf mit Belugalinsen und Süßkartoffel",
+   "kategorie": "kochen/currys",
+   "tags": [],
+   "portionen": "4 Personen",
+   "zeit_gesamt": "45 Min."
+  },
+  {
+   "id": "kochen/nudeln/vegetarische-bolognese",
+   "pfad": "rezepte/kochen/nudeln/vegetarische-bolognese.md",
+   "titel": "Vegetarische Bolognese",
+   "untertitel": "Mit Kürbiskernen und Gemüse, wahlweise vegan",
+   "kategorie": "kochen/nudeln",
+   "tags": [],
+   "portionen": "6 Personen",
+   "zeit_gesamt": "1 Std. 10 Min."
   }
  ]
 }

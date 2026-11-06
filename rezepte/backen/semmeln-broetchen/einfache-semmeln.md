@@ -2,7 +2,6 @@
 titel: Einfache Semmeln
 untertitel: Sauerteig-Semmeln ohne Kneten
 kategorie: backen/semmeln-broetchen
-tags: [sauerteig, vegan, no-knead]
 zeit_gesamt: ca. 14 bis 18 Std.
 ---
 

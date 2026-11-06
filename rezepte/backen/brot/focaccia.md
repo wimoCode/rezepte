@@ -2,8 +2,8 @@
 titel: Failsafe Focaccia
 untertitel: Andy Cooks Style
 kategorie: backen/brot
-tags: [hefe, vegan, no-knead]
 zeit_gesamt: ca. 3 Std.
+quelle: Andy Cooks
 ---
 
 ## Zutaten

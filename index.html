@@ -54,6 +54,7 @@ body {
 a { color: inherit; }
 button, input { font: inherit; color: inherit; }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+[hidden] { display: none !important; }
 .wrap { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem 4rem; }
 
 /* Kopf */
@@ -63,28 +64,37 @@ button, input { font: inherit; color: inherit; }
 .anzahl { color: var(--muted); font-size: .95rem; }
 
 /* Suche */
-.suche { width: 100%; border: 1px solid var(--line); background: transparent; border-radius: 10px; padding: .7rem .9rem; margin-bottom: 1rem; }
+.suche { width: 100%; border: 1px solid var(--line); background: transparent; border-radius: 10px; padding: .7rem .9rem; margin-bottom: 1.25rem; }
 .suche::placeholder { color: var(--muted); }
 
-/* Hauptkategorien */
-.haupt { display: flex; gap: .5rem; margin-bottom: .75rem; }
-.haupt button {
-  flex: 1; padding: .6rem .5rem; border: 1px solid var(--line); background: transparent;
-  border-radius: 10px; cursor: pointer; font-weight: 600;
+/* Kacheln */
+.gruppe { margin: 0 0 1.75rem; }
+.gruppe h2 { font: 600 1.45rem/1.25 var(--serif); margin: 0 0 .7rem; display: flex; align-items: center; gap: .55rem; }
+.gruppe h2 i { width: .7rem; height: .7rem; border-radius: 50%; background: var(--accent); display: inline-block; }
+.gruppe.backen { --farbe: var(--backen); }
+.gruppe.kochen { --farbe: var(--kochen); }
+.gruppe h2 i { background: var(--farbe, var(--accent)); }
+.kacheln { display: grid; grid-template-columns: repeat(2, 1fr); gap: .7rem; }
+@media (min-width: 34rem) { .kacheln { grid-template-columns: repeat(3, 1fr); } }
+.kachel {
+  display: flex; flex-direction: column; align-items: flex-start; gap: .55rem;
+  min-height: 8.6rem; padding: 1rem; text-decoration: none;
+  border: 1px solid var(--line); border-radius: 14px;
 }
-.haupt button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
-
-/* Chips */
-.chips { display: flex; gap: .4rem; overflow-x: auto; padding: .15rem 0 .6rem; margin: 0 -1rem; padding-left: 1rem; padding-right: 1rem; scrollbar-width: none; }
-.chips::-webkit-scrollbar { display: none; }
-.chip {
-  flex: none; border: 0; background: var(--chip); border-radius: 999px;
-  padding: .35rem .8rem; font-size: .92rem; cursor: pointer; white-space: nowrap;
-}
-.chip[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
-.chip.tag::before { content: "#"; opacity: .6; margin-right: .1rem; }
+.kachel:hover, .kachel:active { background: var(--chip); }
+.kachel svg { width: 2.9rem; height: 2.9rem; color: var(--farbe, var(--accent)); flex: none; }
+.kachel .name { font: 600 1.1rem/1.25 var(--serif); }
+.kachel .zahl { color: var(--muted); font-size: .85rem; margin-top: auto; }
+.kachel.noch-leer { border-style: dashed; }
+.kachel.noch-leer svg { opacity: .55; }
 
 /* Liste */
+.titelzeile { margin: 0 0 1rem; }
+.titelzeile h1 { font: 600 2.1rem/1.15 var(--serif); letter-spacing: -.01em; margin: 0; }
+.titelzeile .pfad { display: flex; align-items: center; gap: .5rem; color: var(--muted); font-size: .92rem; margin-bottom: .3rem; }
+.pfad i { width: .55rem; height: .55rem; border-radius: 50%; background: var(--muted); display: inline-block; }
+.pfad i.backen { background: var(--backen); }
+.pfad i.kochen { background: var(--kochen); }
 .liste { list-style: none; margin: 1rem 0 0; padding: 0; border-top: 1px solid var(--line); }
 .liste li { border-bottom: 1px solid var(--line); }
 .zeile {
@@ -97,7 +107,15 @@ button, input { font: inherit; color: inherit; }
 .zeile h2 { font: 600 1.3rem/1.25 var(--serif); margin: 0; }
 .zeile .sub { color: var(--muted); margin: .1rem 0 0; font-size: .95rem; }
 .zeile .meta { color: var(--muted); font-size: .88rem; margin-top: .35rem; }
-.leer { color: var(--muted); padding: 2rem 0; }
+.leer { color: var(--muted); padding: 1.5rem 0; }
+
+/* Chips */
+.chip {
+  flex: none; border: 0; background: var(--chip); border-radius: 999px;
+  padding: .35rem .8rem; font-size: .92rem; cursor: pointer; white-space: nowrap;
+}
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+.chip.tag::before { content: "#"; opacity: .6; margin-right: .1rem; }
 
 /* Rezept */
 .zurueck { display: inline-block; margin: .25rem 0 1rem; padding: .4rem 0; color: var(--muted); text-decoration: none; }
@@ -105,9 +123,6 @@ button, input { font: inherit; color: inherit; }
 .rezept h1 { font: 600 2.1rem/1.15 var(--serif); letter-spacing: -.01em; margin: 0 0 .25rem; }
 .rezept .sub { color: var(--muted); font-size: 1.05rem; margin: 0 0 1rem; }
 .rezept .pfad { display: flex; align-items: center; gap: .5rem; color: var(--muted); font-size: .92rem; margin-bottom: .6rem; }
-.rezept .pfad i { width: .55rem; height: .55rem; border-radius: 50%; background: var(--muted); display: inline-block; }
-.rezept .pfad i.backen { background: var(--backen); }
-.rezept .pfad i.kochen { background: var(--kochen); }
 .daten { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; margin: 0 0 1rem; padding: .8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .daten div { min-width: 6rem; }
 .daten dt { color: var(--muted); font-size: .85rem; }
@@ -115,6 +130,7 @@ button, input { font: inherit; color: inherit; }
 .werkzeuge { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.25rem; align-items: center; }
 .werkzeuge .chip { padding: .5rem .9rem; }
 .tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+.quelle { color: var(--muted); font-size: .9rem; margin: 2rem 0 0; padding-top: .8rem; border-top: 1px solid var(--line); }
 
 .text h2 { font: 600 1.45rem/1.25 var(--serif); margin: 2rem 0 .6rem; }
 .text h3 { font: 600 1.05rem/1.3 var(--sans); margin: 1.2rem 0 .4rem; }
@@ -158,8 +174,30 @@ button, input { font: inherit; color: inherit; }
   var app = document.getElementById('app');
   var anzahl = document.getElementById('anzahl');
   var DATA = null;
-  var filter = { haupt: '', unter: '', tag: '', q: '' };
   var wakeLock = null;
+
+  // ---------- Icons (Linien-Symbole, 48x48) ----------
+  var ICONS = {
+    'brot': '<path d="M6 32c0-10 8-18 18-18s18 8 18 18v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M16 22l5 9M24 20l5 11M32 22l5 9"/>',
+    'semmeln-broetchen': '<ellipse cx="24" cy="27" rx="17" ry="11"/><path d="M15 20c3 4 3 10 0 14M33 20c-3 4-3 10 0 14M24 16v22"/>',
+    'kuchen-torten': '<rect x="7" y="27" width="34" height="12" rx="2"/><path d="M7 33h34M24 27v-8M24 11c2.6 2.4 2.6 5.2 0 7.4c-2.6-2.2-2.6-5 0-7.4z"/>',
+    'kleingebaeck-kekse': '<circle cx="24" cy="24" r="16"/><circle cx="18" cy="19" r="1.8" fill="currentColor"/><circle cx="29" cy="21" r="1.8" fill="currentColor"/><circle cx="23" cy="30" r="1.8" fill="currentColor"/><circle cx="31" cy="30" r="1.4" fill="currentColor"/><circle cx="16" cy="29" r="1.4" fill="currentColor"/>',
+    'herzhaftes': '<path d="M7 13q17-7 34 0L24 43z"/><circle cx="19" cy="20" r="2.6"/><circle cx="29" cy="21" r="2.6"/><circle cx="24" cy="31" r="2.6"/>',
+    'grundrezepte': '<path d="M6 24h36c0 10-8 17-18 17S6 34 6 24z"/><path d="M32 6L22 22M28 8l5 3"/>',
+    'currys': '<path d="M6 25h32c-1 9-8 14-16 14S7 34 6 25z"/><path d="M38 27l7-5M15 9c-3 3 3 5 0 8M22 9c-3 3 3 5 0 8M29 9c-3 3 3 5 0 8"/>',
+    'eintoepfe': '<rect x="10" y="20" width="28" height="19" rx="3"/><path d="M8 24H5M40 24h3M10 20h28M21 16h6M24 16v-3"/><path d="M17 8c-2 2 2 3 0 5M31 8c-2 2 2 3 0 5"/>',
+    'suppen': '<path d="M6 24h36c0 10-8 17-18 17S6 34 6 24z"/><path d="M33 6L26 21M14 9c-3 3 3 5 0 8M21 9c-3 3 3 5 0 8"/>',
+    'nudeln': '<path d="M12 5v12a6 6 0 0 0 12 0V5M18 5v14M18 23v20"/><path d="M29 34c3-4 6 4 9 0s5 3 7 0M29 41c3-4 6 4 9 0s5 3 7 0"/>',
+    'auflaeufe': '<path d="M6 24h36v13a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z"/><path d="M3 28h3M42 28h3M13 17q2-4 4 0M22 14q2-4 4 0M31 17q2-4 4 0"/>',
+    'pfannengerichte': '<circle cx="20" cy="26" r="13"/><circle cx="20" cy="26" r="8"/><path d="M33 26h13"/>',
+    'salate-beilagen': '<path d="M9 39C8 19 21 8 40 8c1 20-9 33-31 31z"/><path d="M9 39L28 20M22 27h8M17 33h6"/>',
+    'saucen-dips': '<path d="M20 7h8v7l5 7v18a3 3 0 0 1-3 3H18a3 3 0 0 1-3-3V21l5-7z"/><path d="M15 28h18"/>',
+    'desserts': '<path d="M14 24a10 10 0 1 1 20 0z"/><path d="M15 24l9 20 9-20"/><path d="M19 30l5 10M29 30l-5 10"/>',
+    'standard': '<circle cx="24" cy="24" r="15"/><circle cx="24" cy="24" r="8"/>'
+  };
+  function icon(id) {
+    return '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (ICONS[id] || ICONS.standard) + '</svg>';
+  }
 
   // ---------- Helfer ----------
   function esc(s) {
@@ -172,19 +210,16 @@ button, input { font: inherit; color: inherit; }
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/(^|[^*])\*([^*]+)\*/g, '$1<em>$2</em>');
   }
-  function labelFor(katId) {
-    var p = katId.split('/');
-    for (var i = 0; i < DATA.kategorien.length; i++) {
-      var h = DATA.kategorien[i];
-      if (h.id === p[0]) {
-        for (var j = 0; j < h.unter.length; j++) {
-          if (h.unter[j].id === p[1]) return h.label + ' · ' + h.unter[j].label;
-        }
-        return h.label;
-      }
-    }
-    return katId;
+  function haupt(id) {
+    return DATA.kategorien.filter(function (k) { return k.id === id; })[0];
   }
+  function unterLabel(hid, uid) {
+    var h = haupt(hid);
+    if (!h) return uid;
+    var u = h.unter.filter(function (x) { return x.id === uid; })[0];
+    return u ? u.label : uid;
+  }
+  function zahl(n) { return n + (n === 1 ? ' Rezept' : ' Rezepte'); }
 
   // ---------- Markdown ----------
   function parseFront(text) {
@@ -242,87 +277,83 @@ button, input { font: inherit; color: inherit; }
     return out.join('\n');
   }
 
-  // ---------- Liste ----------
-  function passt(r) {
-    var haupt = r.kategorie.split('/')[0];
-    if (filter.haupt && haupt !== filter.haupt) return false;
-    if (filter.unter && r.kategorie !== filter.haupt + '/' + filter.unter) return false;
-    if (filter.tag && r.tags.indexOf(filter.tag) < 0) return false;
-    if (filter.q) {
-      var hay = (r.titel + ' ' + r.untertitel + ' ' + r.tags.join(' ') + ' ' + labelFor(r.kategorie)).toLowerCase();
-      var teile = filter.q.toLowerCase().split(/\s+/);
-      for (var k = 0; k < teile.length; k++) if (hay.indexOf(teile[k]) < 0) return false;
-    }
-    return true;
+  // ---------- Listen ----------
+  function listeHtml(rezepte) {
+    if (!rezepte.length) return '';
+    var h = '<ul class="liste">';
+    rezepte.forEach(function (r) {
+      var hid = r.kategorie.split('/')[0];
+      var meta = [unterLabel(hid, r.kategorie.split('/')[1]), r.zeit_gesamt, r.portionen].filter(Boolean).join(' · ');
+      h += '<li><a class="zeile" href="#/r/' + esc(r.id) + '"><span class="marke ' + esc(hid) + '"></span><span>' +
+        '<h2>' + esc(r.titel) + '</h2>' +
+        (r.untertitel ? '<p class="sub">' + esc(r.untertitel) + '</p>' : '') +
+        '<div class="meta">' + esc(meta) + '</div></span></a></li>';
+    });
+    return h + '</ul>';
   }
 
-  function renderListe() {
-    var alle = DATA.rezepte;
-    var treffer = alle.filter(passt);
-    var h = '<input class="suche" id="suche" type="search" placeholder="Rezept suchen" aria-label="Rezept suchen" value="' + esc(filter.q) + '">';
+  function sucheTreffer(q) {
+    var teile = q.toLowerCase().split(/\s+/).filter(Boolean);
+    return DATA.rezepte.filter(function (r) {
+      var hid = r.kategorie.split('/')[0];
+      var hay = (r.titel + ' ' + r.untertitel + ' ' + r.tags.join(' ') + ' ' + unterLabel(hid, r.kategorie.split('/')[1])).toLowerCase();
+      return teile.every(function (t) { return hay.indexOf(t) >= 0; });
+    });
+  }
 
-    h += '<div class="haupt" role="group" aria-label="Bereich">';
-    h += '<button type="button" data-haupt="" aria-pressed="' + (!filter.haupt) + '">Alle</button>';
+  // ---------- Startseite: nur Kategorien ----------
+  function renderStart() {
+    var h = '<input class="suche" id="suche" type="search" placeholder="Rezept suchen" aria-label="Rezept suchen">';
+    h += '<div id="ergebnis" hidden></div><div id="kacheln">';
     DATA.kategorien.forEach(function (k) {
-      h += '<button type="button" data-haupt="' + esc(k.id) + '" aria-pressed="' + (filter.haupt === k.id) + '">' + esc(k.label) + '</button>';
+      h += '<section class="gruppe ' + esc(k.id) + '"><h2><i></i>' + esc(k.label) + '</h2><div class="kacheln">';
+      k.unter.forEach(function (u) {
+        var n = DATA.rezepte.filter(function (r) { return r.kategorie === k.id + '/' + u.id; }).length;
+        h += '<a class="kachel' + (n ? '' : ' noch-leer') + '" href="#/k/' + esc(k.id) + '/' + esc(u.id) + '">' +
+          icon(u.id) + '<span class="name">' + esc(u.label) + '</span><span class="zahl">' + (n ? zahl(n) : 'noch leer') + '</span></a>';
+      });
+      h += '</div></section>';
     });
     h += '</div>';
-
-    if (filter.haupt) {
-      var hk = DATA.kategorien.filter(function (k) { return k.id === filter.haupt; })[0];
-      var vorhanden = hk.unter.filter(function (u) {
-        return alle.some(function (r) { return r.kategorie === hk.id + '/' + u.id; });
-      });
-      if (vorhanden.length) {
-        h += '<div class="chips" role="group" aria-label="Kategorie">';
-        h += '<button class="chip" type="button" data-unter="" aria-pressed="' + (!filter.unter) + '">Alle</button>';
-        vorhanden.forEach(function (u) {
-          h += '<button class="chip" type="button" data-unter="' + esc(u.id) + '" aria-pressed="' + (filter.unter === u.id) + '">' + esc(u.label) + '</button>';
-        });
-        h += '</div>';
-      }
-    }
-
-    var tags = {};
-    alle.forEach(function (r) {
-      if (filter.haupt && r.kategorie.split('/')[0] !== filter.haupt) return;
-      r.tags.forEach(function (t) { tags[t] = (tags[t] || 0) + 1; });
-    });
-    var tagListe = Object.keys(tags).sort();
-    if (tagListe.length) {
-      h += '<div class="chips" role="group" aria-label="Tags">';
-      tagListe.forEach(function (t) {
-        h += '<button class="chip tag" type="button" data-tag="' + esc(t) + '" aria-pressed="' + (filter.tag === t) + '">' + esc(t) + '</button>';
-      });
-      h += '</div>';
-    }
-
-    if (!treffer.length) {
-      h += '<p class="leer">Kein Rezept gefunden. Ändere die Suche oder entferne einen Filter.</p>';
-    } else {
-      h += '<ul class="liste">';
-      treffer.forEach(function (r) {
-        var meta = [labelFor(r.kategorie).split(' · ')[1] || '', r.zeit_gesamt, r.portionen].filter(Boolean).join(' · ');
-        h += '<li><a class="zeile" href="#/r/' + esc(r.id) + '"><span class="marke ' + esc(r.kategorie.split('/')[0]) + '"></span><span>' +
-          '<h2>' + esc(r.titel) + '</h2>' +
-          (r.untertitel ? '<p class="sub">' + esc(r.untertitel) + '</p>' : '') +
-          '<div class="meta">' + esc(meta) + '</div></span></a></li>';
-      });
-      h += '</ul>';
-    }
     app.innerHTML = h;
-    anzahl.textContent = treffer.length + (treffer.length === 1 ? ' Rezept' : ' Rezepte');
+    anzahl.textContent = zahl(DATA.rezepte.length);
     document.title = 'Rezepte';
 
     var s = document.getElementById('suche');
+    var erg = document.getElementById('ergebnis');
+    var kach = document.getElementById('kacheln');
     s.addEventListener('input', function () {
-      filter.q = s.value;
-      var pos = s.selectionStart;
-      renderListe();
-      var n = document.getElementById('suche');
-      n.focus();
-      try { n.setSelectionRange(pos, pos); } catch (e) {}
+      var q = s.value.trim();
+      if (!q) { erg.hidden = true; kach.hidden = false; return; }
+      var t = sucheTreffer(q);
+      erg.innerHTML = t.length ? listeHtml(t) : '<p class="leer">Kein Rezept gefunden. Versuche einen anderen Suchbegriff.</p>';
+      erg.hidden = false; kach.hidden = true;
     });
+  }
+
+  // ---------- Kategorie ----------
+  function renderKategorie(hid, uid) {
+    var h = haupt(hid);
+    if (!h) { renderStart(); return; }
+    var treffer = DATA.rezepte.filter(function (r) { return r.kategorie === hid + '/' + uid; });
+    var out = '<a class="zurueck" href="#/">‹ Alle Kategorien</a>';
+    out += '<div class="titelzeile"><div class="pfad"><i class="' + esc(hid) + '"></i>' + esc(h.label) + '</div><h1>' + esc(unterLabel(hid, uid)) + '</h1></div>';
+    out += treffer.length ? listeHtml(treffer) : '<p class="leer">In dieser Kategorie ist noch kein Rezept.</p>';
+    app.innerHTML = out;
+    anzahl.textContent = '';
+    document.title = unterLabel(hid, uid) + ' · Rezepte';
+    window.scrollTo(0, 0);
+  }
+
+  function renderTag(tag) {
+    var treffer = DATA.rezepte.filter(function (r) { return r.tags.indexOf(tag) >= 0; });
+    var out = '<a class="zurueck" href="#/">‹ Alle Kategorien</a>';
+    out += '<div class="titelzeile"><h1>#' + esc(tag) + '</h1></div>';
+    out += treffer.length ? listeHtml(treffer) : '<p class="leer">Kein Rezept mit diesem Tag.</p>';
+    app.innerHTML = out;
+    anzahl.textContent = '';
+    document.title = '#' + tag + ' · Rezepte';
+    window.scrollTo(0, 0);
   }
 
   // ---------- Rezept ----------
@@ -337,7 +368,7 @@ button, input { font: inherit; color: inherit; }
 
   function renderRezept(id) {
     var r = DATA.rezepte.filter(function (x) { return x.id === id; })[0];
-    if (!r) { app.innerHTML = '<p class="fehler">Dieses Rezept gibt es nicht (mehr). <a href="#/">Zur Übersicht</a></p>'; return; }
+    if (!r) { app.innerHTML = '<p class="fehler">Dieses Rezept gibt es nicht (mehr). <a href="#/">Zu den Kategorien</a></p>'; return; }
     app.innerHTML = '<p class="leer">Lade Rezept …</p>';
     fetch(r.pfad).then(function (res) {
       if (!res.ok) throw new Error(res.status);
@@ -345,18 +376,24 @@ button, input { font: inherit; color: inherit; }
     }).then(function (txt) {
       var f = parseFront(txt);
       var d = f.daten;
-      var haupt = r.kategorie.split('/')[0];
-      var h = '<a class="zurueck" href="#/">‹ Alle Rezepte</a><article class="rezept">';
-      h += '<div class="pfad"><i class="' + esc(haupt) + '"></i>' + esc(labelFor(r.kategorie).replace(' · ', ' / ')) + '</div>';
+      var teile = r.kategorie.split('/');
+      var hid = teile[0], uid = teile[1];
+      var h = '<a class="zurueck" href="#/k/' + esc(hid) + '/' + esc(uid) + '">‹ ' + esc(unterLabel(hid, uid)) + '</a><article class="rezept">';
+      h += '<div class="pfad"><i class="' + esc(hid) + '"></i>' + esc((haupt(hid) || { label: hid }).label + ' / ' + unterLabel(hid, uid)) + '</div>';
       h += '<h1>' + esc(d.titel || r.titel) + '</h1>';
       if (d.untertitel) h += '<p class="sub">' + esc(d.untertitel) + '</p>';
       var felder = [['Portionen', d.portionen], ['Aktive Zeit', d.zeit_aktiv], ['Gesamtzeit', d.zeit_gesamt]].filter(function (x) { return x[1]; });
       if (felder.length) h += '<dl class="daten">' + felder.map(function (x) { return '<div><dt>' + x[0] + '</dt><dd>' + esc(x[1]) + '</dd></div>'; }).join('') + '</dl>';
-      h += '<div class="werkzeuge">';
-      if ('wakeLock' in navigator) h += '<button class="chip" id="wake" type="button" aria-pressed="false">Bildschirm anlassen</button>';
-      if (d.tags && d.tags.length) h += '<span class="tags">' + d.tags.map(function (t) { return '<button class="chip tag" type="button" data-tagsprung="' + esc(t) + '">' + esc(t) + '</button>'; }).join('') + '</span>';
-      h += '</div>';
-      h += '<div class="text" id="text">' + renderMd(f.body) + '</div></article>';
+      var hatTags = d.tags && d.tags.length;
+      if ('wakeLock' in navigator || hatTags) {
+        h += '<div class="werkzeuge">';
+        if ('wakeLock' in navigator) h += '<button class="chip" id="wake" type="button" aria-pressed="false">Bildschirm anlassen</button>';
+        if (hatTags) h += '<span class="tags">' + d.tags.map(function (t) { return '<a class="chip tag" href="#/t/' + encodeURIComponent(t) + '" style="text-decoration:none">' + esc(t) + '</a>'; }).join('') + '</span>';
+        h += '</div>';
+      }
+      h += '<div class="text" id="text">' + renderMd(f.body) + '</div>';
+      if (d.quelle) h += '<p class="quelle">Quelle: ' + esc(d.quelle) + '</p>';
+      h += '</article>';
       app.innerHTML = h;
       document.title = (d.titel || r.titel) + ' · Rezepte';
       anzahl.textContent = '';
@@ -386,12 +423,7 @@ button, input { font: inherit; color: inherit; }
   // ---------- Ereignisse ----------
   app.addEventListener('click', function (e) {
     var t = e.target;
-    if (!t.getAttribute) return;
-    if (t.hasAttribute('data-haupt')) { filter.haupt = t.getAttribute('data-haupt'); filter.unter = ''; renderListe(); }
-    else if (t.hasAttribute('data-unter')) { filter.unter = t.getAttribute('data-unter'); renderListe(); }
-    else if (t.hasAttribute('data-tag')) { var v = t.getAttribute('data-tag'); filter.tag = filter.tag === v ? '' : v; renderListe(); }
-    else if (t.hasAttribute('data-tagsprung')) { filter = { haupt: '', unter: '', tag: t.getAttribute('data-tagsprung'), q: '' }; location.hash = '#/'; }
-    else if (t.id === 'wake') {
+    if (t && t.id === 'wake') {
       var an = t.getAttribute('aria-pressed') !== 'true';
       setWake(an).then(function (ok) {
         t.setAttribute('aria-pressed', String(an && ok));
@@ -406,8 +438,11 @@ button, input { font: inherit; color: inherit; }
 
   function route() {
     setWake(false);
-    var m = location.hash.match(/^#\/r\/(.+)$/);
-    if (m) renderRezept(decodeURIComponent(m[1])); else renderListe();
+    var hash = location.hash, m;
+    if ((m = hash.match(/^#\/r\/(.+)$/))) renderRezept(decodeURIComponent(m[1]));
+    else if ((m = hash.match(/^#\/k\/([^/]+)\/([^/]+)$/))) renderKategorie(decodeURIComponent(m[1]), decodeURIComponent(m[2]));
+    else if ((m = hash.match(/^#\/t\/(.+)$/))) renderTag(decodeURIComponent(m[1]));
+    else { renderStart(); window.scrollTo(0, 0); }
   }
   window.addEventListener('hashchange', route);
 

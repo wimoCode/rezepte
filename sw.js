@@ -1,5 +1,5 @@
 // Einfacher Offline-Cache: zuerst Netz (frische Rezepte), sonst Cache.
-var CACHE = 'rezepte-v1';
+var CACHE = 'rezepte-v2';
 var SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon.svg', 'rezepte/index.json'];
 
 self.addEventListener('install', function (e) {

@@ -2,7 +2,6 @@
 titel: Möhren-Sesam-Brötchen
 untertitel: Ohne Gehzeit, mit Backpulver
 kategorie: backen/semmeln-broetchen
-tags: [vegan, schnell, backpulver]
 portionen: 10 Brötchen
 zeit_aktiv: 15 Min.
 zeit_gesamt: 55 Min.
