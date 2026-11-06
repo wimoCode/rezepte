@@ -95,6 +95,16 @@
    "zeit_gesamt": "ca. 20 Min."
   },
   {
+   "id": "kochen/pfannengerichte/bananen-pfannkuchen",
+   "pfad": "rezepte/kochen/pfannengerichte/bananen-pfannkuchen.md",
+   "titel": "Bananen Pfannkuchen",
+   "untertitel": "",
+   "kategorie": "kochen/pfannengerichte",
+   "tags": [],
+   "portionen": "24 Stück",
+   "zeit_gesamt": ""
+  },
+  {
    "id": "backen/kleingebaeck-kekse/brownie-cookies",
    "pfad": "rezepte/backen/kleingebaeck-kekse/brownie-cookies.md",
    "titel": "Brownie Cookies",
