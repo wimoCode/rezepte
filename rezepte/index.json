@@ -69,10 +69,6 @@
     {
      "id": "herzhaftes",
      "label": "Herzhaftes"
-    },
-    {
-     "id": "grundrezepte",
-     "label": "Grundrezepte"
     }
    ]
   },
@@ -107,6 +103,16 @@
    "tags": [],
    "portionen": "ca. 50 Stück",
    "zeit_gesamt": "30 Min."
+  },
+  {
+   "id": "kochen/saucen-dips/cashew-bechamel-sauce",
+   "pfad": "rezepte/kochen/saucen-dips/cashew-bechamel-sauce.md",
+   "titel": "Cashew-Béchamel-Sauce",
+   "untertitel": "",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
   },
   {
    "id": "kochen/tofu-rezepte/doener-tofu",
@@ -161,11 +167,11 @@
    "zeit_gesamt": "ca. 3 Std."
   },
   {
-   "id": "kochen/saucen-dips/gesunde-nutella",
-   "pfad": "rezepte/kochen/saucen-dips/gesunde-nutella.md",
+   "id": "kochen/desserts/gesunde-nutella",
+   "pfad": "rezepte/kochen/desserts/gesunde-nutella.md",
    "titel": "Gesunde Nutella",
    "untertitel": "Mit Datteln und Kakao, für Porridge oder als Brotaufstrich",
-   "kategorie": "kochen/saucen-dips",
+   "kategorie": "kochen/desserts",
    "tags": [],
    "portionen": "",
    "zeit_gesamt": ""
@@ -210,6 +216,16 @@
     "thermomix",
     "kindergerichte"
    ],
+   "portionen": "",
+   "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/auflaeufe/linsen-lasagne",
+   "pfad": "rezepte/kochen/auflaeufe/linsen-lasagne.md",
+   "titel": "Linsen Lasagne",
+   "untertitel": "Vegan, mit Cashew-Béchamel",
+   "kategorie": "kochen/auflaeufe",
+   "tags": [],
    "portionen": "",
    "zeit_gesamt": ""
   },

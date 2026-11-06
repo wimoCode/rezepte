@@ -31,6 +31,4 @@ Zubereitung: 15 Minuten, Backen: 40 Minuten.
 
 ## Notizen
 
-Dazu passt: Cashew-Kräuter-Creme (S. 194).
-
 Haltbarkeit: 3 Tage, eingefroren mehrere Monate.

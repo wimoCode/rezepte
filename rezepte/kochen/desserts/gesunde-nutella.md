@@ -1,7 +1,7 @@
 ---
 titel: Gesunde Nutella
 untertitel: Mit Datteln und Kakao, für Porridge oder als Brotaufstrich
-kategorie: kochen/saucen-dips
+kategorie: kochen/desserts
 quelle: likegian (Instagram)
 ---
 
