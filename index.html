@@ -454,13 +454,14 @@ button, input { font: inherit; color: inherit; }
       var felder = [['Portionen', d.portionen], ['Aktive Zeit', d.zeit_aktiv], ['Gesamtzeit', d.zeit_gesamt]].filter(function (x) { return x[1]; });
       if (felder.length) h += '<dl class="daten">' + felder.map(function (x) { return '<div><dt>' + x[0] + '</dt><dd>' + esc(x[1]) + '</dd></div>'; }).join('') + '</dl>';
       var hatTags = d.tags && d.tags.length;
-      var basis = parseInt(d.portionen, 10) || 0;
-      var einheit = (d.portionen || '').replace(/^\s*\d+\s*/, '');
       var optionen = [].concat(d.umrechnen || []).map(Number).filter(function (x) { return x > 0; });
+      var namen = [].concat(d.umrechnen_namen || []);
+      var basis = parseInt(d.portionen, 10) || optionen[0] || 0;
+      var einheit = (d.portionen || '').replace(/^\s*\d+\s*/, '');
       var mitMenge = basis > 0 && optionen.length > 1;
       if ('wakeLock' in navigator || hatTags || mitMenge) {
         h += '<div class="werkzeuge">';
-        if (mitMenge) h += '<span class="mengen" role="group" aria-label="Menge">' + optionen.map(function (n) { return '<button class="chip" type="button" data-menge="' + n + '" aria-pressed="' + (n === basis) + '">' + n + (einheit ? ' ' + esc(einheit) : '') + '</button>'; }).join('') + '</span>';
+        if (mitMenge) h += '<span class="mengen" role="group" aria-label="Menge">' + optionen.map(function (n, i) { return '<button class="chip" type="button" data-menge="' + n + '" aria-pressed="' + (n === basis) + '">' + esc(namen[i] || (n + (einheit ? ' ' + einheit : ''))) + '</button>'; }).join('') + '</span>';
         if ('wakeLock' in navigator) h += '<button class="chip" id="wake" type="button" aria-pressed="false">Bildschirm anlassen</button>';
         if (hatTags) h += '<span class="tags">' + d.tags.map(function (t) { return '<a class="chip tag" href="#/t/' + encodeURIComponent(t) + '" style="text-decoration:none">' + esc(t) + '</a>'; }).join('') + '</span>';
         h += '</div>';
