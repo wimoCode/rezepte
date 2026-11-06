@@ -1,8 +1,8 @@
 ---
-titel: Tomatensoße
+titel: Kindertomatensauce
 untertitel: Aus dem Thermomix, püriert
 kategorie: kochen/saucen-dips
-tags: [thermomix]
+tags: [thermomix, kindergerichte]
 quelle: Thermomix (Rezept für den TM6)
 ---
 

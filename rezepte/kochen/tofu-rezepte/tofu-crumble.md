@@ -1,7 +1,7 @@
 ---
 titel: Tofu-Crumble
 untertitel: Beilage
-kategorie: kochen/beilagen
+kategorie: kochen/tofu-rezepte
 ---
 
 ## Zutaten

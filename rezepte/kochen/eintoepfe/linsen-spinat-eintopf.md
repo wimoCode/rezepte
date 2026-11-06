@@ -1,7 +1,7 @@
 ---
-titel: Veganes Linsen-Curry
+titel: Linsen-Spinat-Eintopf
 untertitel: Winter-Eintopf mit Belugalinsen und Süßkartoffel
-kategorie: kochen/currys
+kategorie: kochen/eintoepfe
 portionen: 4 Personen
 zeit_gesamt: 45 Min.
 quelle: REWE Deine Küche

@@ -33,8 +33,8 @@
      "label": "Salate"
     },
     {
-     "id": "beilagen",
-     "label": "Beilagen"
+     "id": "tofu-rezepte",
+     "label": "Tofu-Rezepte"
     },
     {
      "id": "saucen-dips",
@@ -79,6 +79,16 @@
  ],
  "rezepte": [
   {
+   "id": "backen/kleingebaeck-kekse/anita",
+   "pfad": "rezepte/backen/kleingebaeck-kekse/anita.md",
+   "titel": "Anita",
+   "untertitel": "",
+   "kategorie": "backen/kleingebaeck-kekse",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
+  },
+  {
    "id": "backen/kleingebaeck-kekse/apfel-skyr-taler",
    "pfad": "rezepte/backen/kleingebaeck-kekse/apfel-skyr-taler.md",
    "titel": "Apfel-Skyr-Taler",
@@ -111,6 +121,16 @@
    "zeit_gesamt": "5 Min."
   },
   {
+   "id": "kochen/saucen-dips/erdnusssosse",
+   "pfad": "rezepte/kochen/saucen-dips/erdnusssosse.md",
+   "titel": "Erdnusssoße",
+   "untertitel": "",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
+  },
+  {
    "id": "backen/brot/focaccia",
    "pfad": "rezepte/backen/brot/focaccia.md",
    "titel": "Failsafe Focaccia",
@@ -119,6 +139,16 @@
    "tags": [],
    "portionen": "",
    "zeit_gesamt": "ca. 3 Std."
+  },
+  {
+   "id": "kochen/saucen-dips/gesunde-nutella",
+   "pfad": "rezepte/kochen/saucen-dips/gesunde-nutella.md",
+   "titel": "Gesunde Nutella",
+   "untertitel": "Mit Datteln und Kakao, für Porridge oder als Brotaufstrich",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
   },
   {
    "id": "kochen/pfannengerichte/haferflocken-schnitzel",
@@ -139,6 +169,29 @@
    "tags": [],
    "portionen": "ca. 500 ml, 8 bis 12 Portionen",
    "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/saucen-dips/kindertomatensauce",
+   "pfad": "rezepte/kochen/saucen-dips/kindertomatensauce.md",
+   "titel": "Kindertomatensauce",
+   "untertitel": "Aus dem Thermomix, püriert",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [
+    "thermomix",
+    "kindergerichte"
+   ],
+   "portionen": "",
+   "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/eintoepfe/linsen-spinat-eintopf",
+   "pfad": "rezepte/kochen/eintoepfe/linsen-spinat-eintopf.md",
+   "titel": "Linsen-Spinat-Eintopf",
+   "untertitel": "Winter-Eintopf mit Belugalinsen und Süßkartoffel",
+   "kategorie": "kochen/eintoepfe",
+   "tags": [],
+   "portionen": "4 Personen",
+   "zeit_gesamt": "45 Min."
   },
   {
    "id": "kochen/saucen-dips/mandel-sauce",
@@ -211,6 +264,16 @@
    "zeit_gesamt": "ca. 1 bis 2 Tage"
   },
   {
+   "id": "kochen/tofu-rezepte/sticky-tofu",
+   "pfad": "rezepte/kochen/tofu-rezepte/sticky-tofu.md",
+   "titel": "Sticky Tofu",
+   "untertitel": "",
+   "kategorie": "kochen/tofu-rezepte",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
+  },
+  {
    "id": "backen/kleingebaeck-kekse/stillkekse",
    "pfad": "rezepte/backen/kleingebaeck-kekse/stillkekse.md",
    "titel": "Stillkekse",
@@ -233,24 +296,12 @@
    "zeit_gesamt": ""
   },
   {
-   "id": "kochen/beilagen/tofu-crumble",
-   "pfad": "rezepte/kochen/beilagen/tofu-crumble.md",
+   "id": "kochen/tofu-rezepte/tofu-crumble",
+   "pfad": "rezepte/kochen/tofu-rezepte/tofu-crumble.md",
    "titel": "Tofu-Crumble",
    "untertitel": "Beilage",
-   "kategorie": "kochen/beilagen",
+   "kategorie": "kochen/tofu-rezepte",
    "tags": [],
-   "portionen": "",
-   "zeit_gesamt": ""
-  },
-  {
-   "id": "kochen/saucen-dips/tomatensosse",
-   "pfad": "rezepte/kochen/saucen-dips/tomatensosse.md",
-   "titel": "Tomatensoße",
-   "untertitel": "Aus dem Thermomix, püriert",
-   "kategorie": "kochen/saucen-dips",
-   "tags": [
-    "thermomix"
-   ],
    "portionen": "",
    "zeit_gesamt": ""
   },
@@ -273,16 +324,6 @@
    "tags": [],
    "portionen": "",
    "zeit_gesamt": ""
-  },
-  {
-   "id": "kochen/currys/veganes-linsen-curry",
-   "pfad": "rezepte/kochen/currys/veganes-linsen-curry.md",
-   "titel": "Veganes Linsen-Curry",
-   "untertitel": "Winter-Eintopf mit Belugalinsen und Süßkartoffel",
-   "kategorie": "kochen/currys",
-   "tags": [],
-   "portionen": "4 Personen",
-   "zeit_gesamt": "45 Min."
   },
   {
    "id": "kochen/nudeln/vegetarische-bolognese",
