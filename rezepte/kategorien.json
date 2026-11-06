@@ -24,5 +24,11 @@
       "herzhaftes": "Herzhaftes",
       "grundrezepte": "Grundrezepte"
     }
+  },
+  "snacks": {
+    "label": "Snacks",
+    "unter": {
+      "snacks": "Snacks"
+    }
   }
 }

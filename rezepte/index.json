@@ -75,19 +75,19 @@
      "label": "Grundrezepte"
     }
    ]
+  },
+  {
+   "id": "snacks",
+   "label": "Snacks",
+   "unter": [
+    {
+     "id": "snacks",
+     "label": "Snacks"
+    }
+   ]
   }
  ],
  "rezepte": [
-  {
-   "id": "backen/kleingebaeck-kekse/anita",
-   "pfad": "rezepte/backen/kleingebaeck-kekse/anita.md",
-   "titel": "Anita",
-   "untertitel": "",
-   "kategorie": "backen/kleingebaeck-kekse",
-   "tags": [],
-   "portionen": "",
-   "zeit_gesamt": ""
-  },
   {
    "id": "backen/kleingebaeck-kekse/apfel-skyr-taler",
    "pfad": "rezepte/backen/kleingebaeck-kekse/apfel-skyr-taler.md",
@@ -97,6 +97,16 @@
    "tags": [],
    "portionen": "ca. 12 Taler",
    "zeit_gesamt": "ca. 20 Min."
+  },
+  {
+   "id": "backen/kleingebaeck-kekse/brownie-cookies",
+   "pfad": "rezepte/backen/kleingebaeck-kekse/brownie-cookies.md",
+   "titel": "Brownie Cookies",
+   "untertitel": "Außen zart knusprig, innen soft",
+   "kategorie": "backen/kleingebaeck-kekse",
+   "tags": [],
+   "portionen": "ca. 50 Stück",
+   "zeit_gesamt": "30 Min."
   },
   {
    "id": "backen/semmeln-broetchen/einfache-semmeln",
@@ -234,6 +244,16 @@
    "zeit_gesamt": ""
   },
   {
+   "id": "kochen/nudeln/omas-spaetzle",
+   "pfad": "rezepte/kochen/nudeln/omas-spaetzle.md",
+   "titel": "Omas Spätzle",
+   "untertitel": "",
+   "kategorie": "kochen/nudeln",
+   "tags": [],
+   "portionen": "4 Personen",
+   "zeit_gesamt": "35 Min."
+  },
+  {
    "id": "backen/brot/sauerteig-brot",
    "pfad": "rezepte/backen/brot/sauerteig-brot.md",
    "titel": "Sauerteig-Brot ohne Kerne",
@@ -262,6 +282,16 @@
    "tags": [],
    "portionen": "6 Pizzen",
    "zeit_gesamt": "ca. 1 bis 2 Tage"
+  },
+  {
+   "id": "snacks/snacks/snuts",
+   "pfad": "rezepte/snacks/snacks/snuts.md",
+   "titel": "Snuts",
+   "untertitel": "",
+   "kategorie": "snacks/snacks",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
   },
   {
    "id": "kochen/tofu-rezepte/sticky-tofu",
@@ -301,6 +331,16 @@
    "titel": "Tofu-Crumble",
    "untertitel": "Beilage",
    "kategorie": "kochen/tofu-rezepte",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
+  },
+  {
+   "id": "backen/kleingebaeck-kekse/vanillekipferl",
+   "pfad": "rezepte/backen/kleingebaeck-kekse/vanillekipferl.md",
+   "titel": "Vanillekipferl",
+   "untertitel": "",
+   "kategorie": "backen/kleingebaeck-kekse",
    "tags": [],
    "portionen": "",
    "zeit_gesamt": ""

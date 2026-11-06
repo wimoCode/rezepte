@@ -1,6 +1,6 @@
 ---
-titel: Anita
-kategorie: backen/kleingebaeck-kekse
+titel: Snuts
+kategorie: snacks/snacks
 ---
 
 ## Zutaten
