@@ -125,6 +125,16 @@
    "zeit_gesamt": ""
   },
   {
+   "id": "kochen/salate/couscous-salat-mit-gebratenen-zucchini",
+   "pfad": "rezepte/kochen/salate/couscous-salat-mit-gebratenen-zucchini.md",
+   "titel": "Couscous-Salat mit gebratenen Zucchini",
+   "untertitel": "",
+   "kategorie": "kochen/salate",
+   "tags": [],
+   "portionen": "8 Personen",
+   "zeit_gesamt": ""
+  },
+  {
    "id": "kochen/tofu-rezepte/doener-tofu",
    "pfad": "rezepte/kochen/tofu-rezepte/doener-tofu.md",
    "titel": "Döner-Tofu",
@@ -155,6 +165,16 @@
    ],
    "portionen": "4 Portionen",
    "zeit_gesamt": "5 Min."
+  },
+  {
+   "id": "kochen/saucen-dips/erdnuss-mandelsauce",
+   "pfad": "rezepte/kochen/saucen-dips/erdnuss-mandelsauce.md",
+   "titel": "Erdnuss-Mandelsauce",
+   "untertitel": "",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [],
+   "portionen": "",
+   "zeit_gesamt": ""
   },
   {
    "id": "kochen/saucen-dips/erdnusssosse",
@@ -248,6 +268,16 @@
    "tags": [],
    "portionen": "4 Personen",
    "zeit_gesamt": "45 Min."
+  },
+  {
+   "id": "kochen/eintoepfe/mafe",
+   "pfad": "rezepte/kochen/eintoepfe/mafe.md",
+   "titel": "Mafé",
+   "untertitel": "Süßkartoffel-Erdnuss-Eintopf",
+   "kategorie": "kochen/eintoepfe",
+   "tags": [],
+   "portionen": "4",
+   "zeit_gesamt": ""
   },
   {
    "id": "kochen/saucen-dips/mandel-sauce",
@@ -390,6 +420,16 @@
    "tags": [],
    "portionen": "",
    "zeit_gesamt": ""
+  },
+  {
+   "id": "kochen/saucen-dips/vegane-bratensauce",
+   "pfad": "rezepte/kochen/saucen-dips/vegane-bratensauce.md",
+   "titel": "Vegane Bratensauce",
+   "untertitel": "",
+   "kategorie": "kochen/saucen-dips",
+   "tags": [],
+   "portionen": "4 Portionen",
+   "zeit_gesamt": "25 Min."
   },
   {
    "id": "kochen/desserts/veganer-schokopudding",
